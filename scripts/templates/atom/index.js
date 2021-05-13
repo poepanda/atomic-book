@@ -1,21 +1,20 @@
 const path = require('path')
 
-const basePath = path.join(__dirname, '../../../src/ui') // TODO: Add option to use core,  to
 
-module.exports = {
-  description: 'Add a component',
+module.exports = (basePath) => ({
+  description: 'Add a new Atom',
   prompts: [
     {
       type: 'input',
       name: 'componentName',
-      message: 'What is the name?',
-      default: 'FooBar',
+      message: 'Atom name?',
+      default: 'Button',
     },
   ],
   actions: () => {
     const baseName = path.join(basePath, '{{pascalCase componentName}}/{{pascalCase componentName}}')
-    const templateBaseName = './component/component'
-    const fileExtensions = ['js', 'test.js', 'scss', 'stories.js']
+    const templateBaseName = './atom/atom'
+    const fileExtensions = ['tsx', 'test.tsx', 'scss', 'stories.tsx']
 
     const actions = [
       ...fileExtensions.map((fileExtension) => ({
@@ -24,6 +23,7 @@ module.exports = {
         path: `${baseName}.${fileExtension}`,
         templateFile: `${templateBaseName}.${fileExtension}.hbs`,
         abortOnFail: true,
+        data: { type: 'atom' }
       })),
       {
         type: 'prettify',
@@ -33,4 +33,4 @@ module.exports = {
 
     return actions
   },
-}
+})

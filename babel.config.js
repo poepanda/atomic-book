@@ -1,5 +1,13 @@
 module.exports = {
   plugins: [
+    [
+      "module-resolver", {
+        "root": ["./src"],
+        "alias": {
+          "@scripts": "./scripts"
+        }
+      }
+    ],
     '@babel/plugin-proposal-object-rest-spread',
     [
       '@babel/plugin-proposal-private-property-in-object',

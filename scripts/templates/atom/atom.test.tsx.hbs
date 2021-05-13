@@ -10,9 +10,9 @@ describe('{{ pascalCase componentName }}', () => {
     ReactDOM.render(<{{ pascalCase componentName }} />, div)
     ReactDOM.unmountComponentAtNode(div)
   })
-  test('finds TODO: {{ pascalCase componentName }}', () => {
+  test('Find component with text {{ pascalCase componentName }}', () => {
     const { getByText } = render(
-    <{{ pascalCase componentName }} text={'TODO: {{ pascalCase componentName }}'} />)
-    expect(getByText('TODO: {{ pascalCase componentName }}'))
+    <{{ pascalCase componentName }} />)
+    expect(getByText('{{componentName}}'))
   })
 })
