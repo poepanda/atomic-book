@@ -1,0 +1,21 @@
+@import 'src/base/styles/variables.scss';
+
+.atom__image--type-thumbnail-landscape {
+  width: 136px;
+  height: 92px;
+  border-radius: 8px;
+  background-color: $sbds-global-color-blue-10;
+}
+
+.atom__image--type-thumbnail-portrait {
+  width: 213px;
+  height: 273px;
+  border-radius: 8px;
+  background-color: $sbds-global-color-blue-10;
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

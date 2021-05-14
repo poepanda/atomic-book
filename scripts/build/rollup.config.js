@@ -94,7 +94,7 @@ const rollupConfig = getFilesFolders(srcDirectory)
       postcss({
         modules:
           fs.existsSync(file.replace('.tsx', '.module.scss')) || fs.existsSync(file.replace('.tsx', '.module.css')),
-        extract: true,
+        // extract: true,
       }),
       terser(),
     ],

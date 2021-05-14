@@ -4,16 +4,19 @@ const prettier = require('prettier')
 
 const atomGenerator = require('./atom/index.js')
 const moleculeGenerator = require('./molecule/index.js')
+const organismGenerator = require('./organism/index.js')
 const packageJson = require('../../package.json')
 
 const paths = {
   atom: path.join(__dirname, '../../src/atoms'),
   molecule: path.join(__dirname, '../../src/molecules'),
+  organism: path.join(__dirname, '../../src/organisms'),
 }
 
 module.exports = plop => {
   plop.setGenerator('Atom', atomGenerator(paths.atom))
   plop.setGenerator('Molecule', moleculeGenerator(paths.molecule))
+  plop.setGenerator('Organism', organismGenerator(paths.organism))
 
   plop.setActionType('prettify', (answers, config, plop) => {
     const folderPath = `${path.join(paths[answers.type], plop.getHelper('pascalCase')(answers.componentName))}`

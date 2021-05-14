@@ -1,0 +1,32 @@
+@import 'src/base/styles/variables.scss';
+
+.atom__tag--type-common {
+  padding: 2px 8px;
+  font-size: $fontsize-10px;
+  line-height: $fontsize-12px;
+  color: $sbds-status-color-neutral-darker;
+  font-weight: 700;
+  border: 1px solid $sbds-status-color-neutral-light;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.atom__tag--type-callout-topleft {
+  padding: 2px 8px;
+  font-size: $fontsize-10px;
+  line-height: $fontsize-12px;
+  color: white;
+  font-weight: 700;
+  background-color: $sbds-status-color-neutral-darker;;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: inline-block;
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

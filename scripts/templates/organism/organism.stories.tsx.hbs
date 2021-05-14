@@ -3,7 +3,7 @@ import React from 'react'
 import { getConfig } from '@scripts/storybook/storyConfig'
 import {{ pascalCase componentName }}, { I{{ pascalCase componentName }}Props } from './{{ pascalCase componentName }}'
 
-export default getConfig({ title: 'molecules/{{ pascalCase componentName }}', component: {{ pascalCase componentName }} })
+export default getConfig({ title: 'organisms/{{ pascalCase componentName }}', component: {{ pascalCase componentName }} })
 
 const Template: Story<I{{ pascalCase componentName }}Props> = (args: I{{ pascalCase componentName }}Props) => <{{ pascalCase componentName }} {...args}></{{ pascalCase componentName }}>;
 

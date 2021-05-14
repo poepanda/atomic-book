@@ -1,0 +1,8 @@
+@import 'src/base/styles/variables.scss';
+
+.atom__link {
+  color: $sbds-font-color-link;
+  font-size: $fontsize-14px;
+  line-height: $fontsize-20px;
+  font-weight: 400;
+}

@@ -1,0 +1,93 @@
+@import 'src/base/styles/variables.scss';
+
+
+.atom__typo {
+  margin: 0;
+  padding: 0;
+}
+
+.atom__typo--type-standard-title {
+  font-size: $fontsize-16px;
+  font-weight: 500;
+  color: $sbds-font-color-primary;
+  line-height: $fontsize-20px;
+}
+
+.atom__typo--type-merchant-name {
+  font-size: $fontsize-16px;
+  font-weight: 500;
+  color: $sbds-font-color-secondary;
+  line-height: $fontsize-24px;
+}
+
+.atom__typo--type-final-price {
+  font-size: $fontsize-18px;
+  font-weight: 700;
+  color: $sbds-font-color-primary;
+  line-height: $fontsize-28px;
+}
+
+.atom__typo--type-usual-price {
+  font-size: $fontsize-16px;
+  font-weight: 400;
+  color: $sbds-font-color-disabled;
+  line-height: $fontsize-24px;
+  text-decoration: line-through;
+}
+
+.atom__typo--type-long-title-secondary {
+  font-size: $fontsize-16px;
+  font-weight: 400;
+  color: $sbds-font-color-inactive;
+  line-height: $fontsize-24px;
+  max-height: $fontsize-72px;
+  overflow: hidden;
+}
+
+.atom__typo--type-long-title-primary {
+  font-size: $fontsize-16px;
+  font-weight: 400;
+  color: $sbds-font-color-primary;
+  line-height: $fontsize-24px;
+  max-height: $fontsize-72px;
+  overflow: hidden;
+}
+
+.atom__typo--type-usual-cashback {
+  font-size: $fontsize-14px;
+  font-weight: 400;
+  color: $sbds-font-color-disabled;
+  line-height: $fontsize-20px;
+}
+
+.atom__typo--type-cashback {
+  font-size: $fontsize-16px;
+  font-weight: 400;
+  color: $sbds-font-color-primary;
+  line-height: $fontsize-28px;
+  b {
+    font-size: $fontsize-18px;
+  }
+}
+
+.atom__typo--type-progress-bar-label {
+  font-size: $fontsize-14px;
+  font-weight: 400;
+  color: $sbds-font-color-placeholder;
+  line-height: $fontsize-20px;
+}
+
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .atom__typo--type-standard-title {
+    font-size: $fontsize-18px;
+    line-height: $fontsize-24px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+  .atom__typo--type-standard-title {
+    font-size: $fontsize-24px;
+    line-height: $fontsize-32px;
+  }
+}

@@ -2,18 +2,18 @@ const path = require('path')
 
 
 module.exports = (basePath) => ({
-  description: 'Add a new Molecule',
+  description: 'Add a new Organism',
   prompts: [
     {
       type: 'input',
       name: 'componentName',
-      message: 'Molecule name?',
-      default: 'ProgressBar',
+      message: 'Organism name?',
+      default: 'Product',
     },
   ],
   actions: () => {
     const baseName = path.join(basePath, '{{pascalCase componentName}}/{{pascalCase componentName}}')
-    const templateBaseName = './molecule/molecule'
+    const templateBaseName = './organism/organism'
     const fileExtensions = ['tsx', 'test.tsx', 'scss', 'stories.tsx']
 
     const actions = [
@@ -23,7 +23,7 @@ module.exports = (basePath) => ({
         path: `${baseName}.${fileExtension}`,
         templateFile: `${templateBaseName}.${fileExtension}.hbs`,
         abortOnFail: true,
-        data: { type: 'molecule' }
+        data: { type: 'organism' }
       })),
       {
         type: 'prettify',

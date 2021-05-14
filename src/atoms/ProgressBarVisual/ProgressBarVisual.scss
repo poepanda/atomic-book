@@ -1,0 +1,11 @@
+@import 'src/base/styles/variables.scss';
+
+.atom__progress-bar-visual {
+  width: 100%;
+  height: 4px;
+}
+.atom__progress-bar-visual__highlight {
+  height: 4px;
+  background: linear-gradient(to left, $sbds-global-color-yellow-30, $sbds-global-color-yellow-20);
+  border-radius: 2px;
+}

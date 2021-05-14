@@ -1,0 +1,14 @@
+@import 'src/base/styles/variables.scss';
+
+.molecule__progress-bar {
+  display: flex;
+  align-items: center;
+}
+
+.molecule__progress-bar__label {
+  margin-left: 8px;
+}
+
+.molecule__progress-bar__visual {
+  flex: 1;
+}

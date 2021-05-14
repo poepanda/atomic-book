@@ -13,7 +13,10 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@scripts": ["./scripts"],
+      "@scripts/*": ["./scripts/*"],
+      "@base/*": ["./src/base/*"],
+      "@atoms/*": ["./src/atoms/*"],
+      "@molecules/*": ["./src/molecules/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
