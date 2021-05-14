@@ -12,21 +12,25 @@ export enum ImageTypes {
 export interface IImageProps {
   type?: ImageTypes,
   className?: String,
-  children: ReactChild,
+  alt?: string,
+  src?: string,
 }
 
-function Image({ type, children, className = '' }: IImageProps) {
+function Image({ type, alt, src, className = '' }: IImageProps) {
   const divClasses = classnames(
     'atom__image',
     `atom__image--type-${kebabCase(type)}`,
     className,
   )
-  return <div className={divClasses}>{children}</div>
+  // return <div className={divClasses}></div>
+  return <img className={divClasses} alt={alt} src={src || 'https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder-1024x512.png'} />
 }
 
 Image.propTypes = {
   children: PropTypes.node,
   type: PropTypes.number,
+  alt: PropTypes.string,
+  src: PropTypes.string
 }
 
 export default Image

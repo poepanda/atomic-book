@@ -5,4 +5,8 @@
   font-size: $fontsize-14px;
   line-height: $fontsize-20px;
   font-weight: 400;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

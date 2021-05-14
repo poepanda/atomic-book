@@ -1,0 +1,31 @@
+@import 'src/base/styles/variables.scss';
+
+.organism__product-grid {
+  
+}
+
+.organism__product-grid__product {
+  padding: 8px;
+  width: 50%;
+  display: inline-block;
+}
+
+.organism__product-grid__title {
+  padding: 0 8px;
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .organism__product-grid__product {
+    padding: 12px; 
+    width: 25%;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+  .organism__product-grid__product {
+    padding: 12px;
+    width: 210px;
+    display: inline-block;
+  }
+}

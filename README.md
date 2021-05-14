@@ -59,7 +59,7 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <p style="text-align: center;margin-top: 36px">
-  forked from <a href="https://github.com/jmlivingston/react-components-library">jl-react-components-library</a>
+  I forked a bit chunk from <a href="https://github.com/jmlivingston/react-components-library">jl-react-components-library</a>, adding some Typescript spcies and cook it to more atomic.
 </p> 
 
 <!-- MARKDOWN LINKS & IMAGES -->

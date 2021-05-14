@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.card-container {
+  width: 136px;
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .card-container {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

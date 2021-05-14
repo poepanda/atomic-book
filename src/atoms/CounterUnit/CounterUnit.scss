@@ -1,0 +1,11 @@
+@import 'src/base/styles/variables.scss';
+
+.atom__counter-unit {
+  padding: 4px;
+  background-color: $sbds-global-color-yellow-200;
+  color: $sbds-global-color-yellow-600;
+  font-size: $fontsize-16px;
+  line-height: $fontsize-19px;
+  display: inline-block;
+  font-weight: 700;
+}

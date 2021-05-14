@@ -1,6 +1,5 @@
 @import 'src/base/styles/variables.scss';
 
-
 .atom__typo {
   margin: 0;
   padding: 0;
@@ -14,67 +13,68 @@
 }
 
 .atom__typo--type-merchant-name {
-  font-size: $fontsize-16px;
+  font-size: $fontsize-12px;
   font-weight: 500;
   color: $sbds-font-color-secondary;
-  line-height: $fontsize-24px;
+  line-height: $fontsize-16px;
 }
 
 .atom__typo--type-final-price {
-  font-size: $fontsize-18px;
+  font-size: $fontsize-14px;
   font-weight: 700;
   color: $sbds-font-color-primary;
-  line-height: $fontsize-28px;
+  line-height: $fontsize-20px;
 }
 
 .atom__typo--type-usual-price {
-  font-size: $fontsize-16px;
+  font-size: $fontsize-12px;
   font-weight: 400;
   color: $sbds-font-color-disabled;
-  line-height: $fontsize-24px;
+  line-height: $fontsize-16px;
   text-decoration: line-through;
 }
 
 .atom__typo--type-long-title-secondary {
-  font-size: $fontsize-16px;
+  font-size: $fontsize-12px;
   font-weight: 400;
   color: $sbds-font-color-inactive;
-  line-height: $fontsize-24px;
-  max-height: $fontsize-72px;
+  line-height: $fontsize-16px;
+  max-height: $fontsize-48px;
   overflow: hidden;
 }
 
 .atom__typo--type-long-title-primary {
-  font-size: $fontsize-16px;
+  font-size: $fontsize-12px;
   font-weight: 400;
   color: $sbds-font-color-primary;
-  line-height: $fontsize-24px;
-  max-height: $fontsize-72px;
+  line-height: $fontsize-16px;
+  max-height: $fontsize-48px;
   overflow: hidden;
 }
 
 .atom__typo--type-usual-cashback {
-  font-size: $fontsize-14px;
+  font-size: $fontsize-10px;
   font-weight: 400;
   color: $sbds-font-color-disabled;
-  line-height: $fontsize-20px;
+  line-height: $fontsize-12px;
 }
 
 .atom__typo--type-cashback {
-  font-size: $fontsize-16px;
+  font-size: $fontsize-14px;
   font-weight: 400;
   color: $sbds-font-color-primary;
-  line-height: $fontsize-28px;
+  line-height: $fontsize-20px;
   b {
+    font-weight: 700;
     font-size: $fontsize-18px;
   }
 }
 
 .atom__typo--type-progress-bar-label {
-  font-size: $fontsize-14px;
-  font-weight: 400;
+  font-size: $fontsize-10px;
+  font-weight: 700;
   color: $sbds-font-color-placeholder;
-  line-height: $fontsize-20px;
+  line-height: $fontsize-12px;
 }
 
 
@@ -83,6 +83,53 @@
     font-size: $fontsize-18px;
     line-height: $fontsize-24px;
   }
+
+  .atom__typo--type-merchant-name {
+    font-size: $fontsize-16px;
+    line-height: $fontsize-24px;
+  }
+  
+  .atom__typo--type-final-price {
+    font-size: $fontsize-18px;
+    line-height: $fontsize-28px;
+  }
+  
+  .atom__typo--type-usual-price {
+    font-size: $fontsize-16px;
+    line-height: $fontsize-24px;
+    text-decoration: line-through;
+  }
+  
+  .atom__typo--type-long-title-secondary {
+    font-size: $fontsize-16px;
+    line-height: $fontsize-24px;
+    max-height: $fontsize-72px;
+  }
+  
+  .atom__typo--type-long-title-primary {
+    font-size: $fontsize-16px;
+    line-height: $fontsize-24px;
+    max-height: $fontsize-72px;
+  }
+  
+  .atom__typo--type-usual-cashback {
+    font-size: $fontsize-14px;
+    line-height: $fontsize-20px;
+  }
+  
+  .atom__typo--type-cashback {
+    font-size: $fontsize-16px;
+    line-height: $fontsize-28px;
+    b {
+      font-size: $fontsize-18px;
+    }
+  }
+  
+  .atom__typo--type-progress-bar-label {
+    font-size: $fontsize-14px;
+    line-height: $fontsize-20px;
+  }
+  
 }
 
 @media screen and (min-width: $breakpoint-min-desktop) {

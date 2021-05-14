@@ -6,12 +6,19 @@ $fontsize-12px: 0.75rem;
 $fontsize-14px: 0.875rem;
 $fontsize-16px: 1rem;
 $fontsize-18px: 1.125rem;
+$fontsize-19px: 1.1875rem;
 $fontsize-20px: 1.25rem;
 $fontsize-24px: 1.5rem;
 $fontsize-28px: 1.75rem;
 $fontsize-32px: 2rem;
+$fontsize-48px: 3rem;
 $fontsize-72px: 4.5rem;
 
 /* Breakpoints */
 $breakpoint-min-desktop: 769px;
 $breakpoint-min-tablet: 481px;
+
+/* extra colors */
+$sbds-global-color-yellow-200: #FFEF91;
+$sbds-global-color-yellow-600: #CF9608;
+$sbds-global-color-yellow-500: #F6BF16;

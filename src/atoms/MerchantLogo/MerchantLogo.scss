@@ -1,0 +1,36 @@
+@import 'src/base/styles/variables.scss';
+$card_desktop_height: 66px;
+$card_mobile_height: 40px;
+
+.atom__merchant-logo {
+  height: $card_mobile_height;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
+  img {
+    max-height: $card_mobile_height;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .atom__merchant-logo {
+    height: $card_desktop_height;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 16px;
+    padding: 8px;
+    overflow: hidden;
+    img {
+      max-height: $card_desktop_height;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

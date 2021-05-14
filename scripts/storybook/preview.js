@@ -1,4 +1,5 @@
 import '../../src/base/styles/global.scss';
+import '../../src/base/styles/stories.scss';
 
 export const parameters = {
   viewport: {
@@ -33,5 +34,22 @@ export const parameters = {
       },
     }, 
     defaultViewport: 'someDefault',
+  },
+  backgrounds: {
+    default: 'grey',
+    values: [
+      {
+        name: 'grey',
+        value: '#DDDFE3',
+      },
+      {
+        name: 'white',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'dark',
+        value: '#212836',
+      },
+    ],
   },
 }

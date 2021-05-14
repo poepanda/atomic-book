@@ -1,0 +1,40 @@
+@import 'src/base/styles/variables.scss';
+
+.molecule__offer {
+  position: relative;
+  margin-top: 4px;
+}
+
+.molecule__offer__image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.molecule__offer__top-tag {
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.molecule__offer__merchant {
+  margin-top: 8px;
+}
+
+.molecule__offer__cashback {
+  margin-top: 8px;
+}
+.molecule__offer__description {
+  margin-top: 8px;
+}
+
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .molecule__offer {
+    position: relative;
+    margin-top: 4px;
+  }
+  
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

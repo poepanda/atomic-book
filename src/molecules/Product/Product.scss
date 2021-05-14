@@ -1,0 +1,38 @@
+@import 'src/base/styles/variables.scss';
+
+.molecule__product {
+  position: relative;
+  margin-top: 4px;
+}
+
+.molecule__product__image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.molecule__product__top-tag {
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.molecule__product__merchant-name {
+  margin-top: 8px;
+}
+
+.molecule__product__description {
+  margin-top: 8px;
+}
+
+.molecule__product__price {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .molecule__product {
+  }
+  
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

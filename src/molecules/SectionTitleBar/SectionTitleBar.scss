@@ -1,0 +1,32 @@
+@import 'src/base/styles/variables.scss';
+
+.molecule__section-title-bar {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.molecule__section-title-bar__ctas {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.molecule__section-title-bar__icon {
+  margin-right: 10px;
+  svg {
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+  .molecule__section-title-bar__icon {
+    margin-right: 12px;
+    svg {
+      height: 24px;
+    }
+  }
+}

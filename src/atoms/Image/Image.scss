@@ -1,20 +1,27 @@
 @import 'src/base/styles/variables.scss';
 
 .atom__image--type-thumbnail-landscape {
-  width: 136px;
-  height: 92px;
+  width: 100%;
+  max-height: 90px;
   border-radius: 8px;
   background-color: $sbds-global-color-blue-10;
+  overflow: hidden;
 }
 
 .atom__image--type-thumbnail-portrait {
-  width: 213px;
-  height: 273px;
+  width: 100%;
+  max-height: 273px;
   border-radius: 8px;
   background-color: $sbds-global-color-blue-10;
+  overflow: hidden;
 }
 
 @media screen and (min-width: $breakpoint-min-tablet) {
+
+  .atom__image--type-thumbnail-landscape {
+    width: 100%;
+    max-height: 140px;
+  }
 }
 
 @media screen and (min-width: $breakpoint-min-desktop) {

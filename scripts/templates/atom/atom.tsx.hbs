@@ -1,15 +1,26 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import classnames from 'classnames'
+
 import './{{ pascalCase componentName }}.scss'
 
-export interface I{{ pascalCase componentName }}Props {}
+export interface I{{ pascalCase componentName }}Props {
+  className: string
+}
 
-function {{ pascalCase componentName }}({}: I{{ pascalCase componentName }}Props) {
-  return <div className={'atom__{{ dashCase componentName}}'}>{{componentName}}</div>
+function {{ pascalCase componentName }}({ className = '' }: I{{ pascalCase componentName }}Props) {
+  const classes = classnames(
+    'atom__{{ dashCase componentName}}',
+    className,
+  )
+
+  return (
+    <div className={classes}>{{componentName}}</div>
+  )
 }
 
 {{ pascalCase componentName }}.propTypes = {
-  text: PropTypes.string
+  className: PropTypes.string
 }
 
 export default {{ pascalCase componentName }}

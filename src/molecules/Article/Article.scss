@@ -1,0 +1,40 @@
+@import 'src/base/styles/variables.scss';
+
+.molecule__article {
+  position: relative;
+  margin-top: 4px;
+}
+
+.molecule__article__image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.molecule__article__top-tag {
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.molecule__article__title {
+  margin-top: 8px;
+}
+
+.molecule__article__description {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.molecule__article__tag {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: $breakpoint-min-tablet) {
+  .molecule__article {
+  }
+  
+}
+
+@media screen and (min-width: $breakpoint-min-desktop) {
+}

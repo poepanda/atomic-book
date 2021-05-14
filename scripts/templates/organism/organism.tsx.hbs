@@ -5,7 +5,11 @@ import './{{ pascalCase componentName }}.scss'
 export interface I{{ pascalCase componentName }}Props {}
 
 function {{ pascalCase componentName }}({}: I{{ pascalCase componentName }}Props) {
-  return <div className={'atom__{{ dashCase componentName}}'}>{{componentName}}</div>
+  return (
+    <div className={'organism__{{ dashCase componentName}}'}>
+      {{componentName}}
+    </div>
+  )
 }
 
 {{ pascalCase componentName }}.propTypes = {
