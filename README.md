@@ -1,12 +1,6 @@
 # Atomic Book 🦄 🎨 ⚛️ 📖
 
-  <div style="text-align: center">
-    <img style="max-width: 200px;margin-top:-16px" src="https://scholarblogs.emory.edu/lits/files/2019/03/atomicdesign.png" alt="Atomic design" />
-    <img src="https://camo.githubusercontent.com/3c2a5b77726528a5b9618bf65a6e8fc26baedce970dc2eb39d789deeb9f703fa/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313130303830343438353631363536363237332f734f63742d54786d2e706e67" alt="Storybook" data-canonical-src="https://pbs.twimg.com/profile_images/1100804485616566273/sOct-Txm.png" style="max-width:180px" />
-  </div>
-  <h3 style="text-align: center;margin-top: 16px">With</h3>
-  <img style="margin-bottom: 16px" src="https://i.pinimg.com/originals/c3/8e/e8/c38ee8475ee7f3680f706c56c3a1194c.png" alt="Typescript" alt="Typescript">
-
+![Atomic Book Annotation](assets/images/atomic-book-anotation.png)
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
