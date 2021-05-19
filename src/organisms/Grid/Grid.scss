@@ -1,31 +1,85 @@
 @import 'src/base/styles/variables.scss';
 
-.organism__product-grid {
-  
+.organism__grid {
+  border-radius: 8px;
+  background-color: white;
+  padding: 0 8px 8px 8px;
 }
 
-.organism__product-grid__product {
+.organism__grid__offer-card {
   padding: 8px;
   width: 50%;
   display: inline-block;
 }
 
-.organism__product-grid__title {
+.organism__grid__title {
   padding: 0 8px;
 }
 
+.organism__grid__banner {
+  display: inline-block;
+  padding: 8px;
+}
+
+.organism__grid__content {
+  width: 100%;
+  height: auto;
+}
+
+.organism__grid--cols-3,
+.organism__grid--cols-4,
+.organism__grid--cols-5,
+.organism__grid--cols-6 {
+  .organism__grid__banner {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: $breakpoint-min-tablet) {
-  .organism__product-grid__product {
+  .organism__grid__offer-card {
     padding: 12px; 
     width: 25%;
     display: inline-block;
   }
+  .organism__grid--cols-2 {
+    .organism__grid__banner {
+      width: 50%;
+    }
+  }
+
+  .organism__grid--cols-3 {
+    .organism__grid__banner {
+      width: 33.33%;
+    }
+  }
+
+  .organism__grid--cols-4 {
+    .organism__grid__banner {
+      width: 25%;
+    }
+  }
+
+  .organism__grid--cols-5 {
+    .organism__grid__banner {
+      width: 20%;
+    }
+  }
+
+  .organism__grid--cols-6 {
+    .organism__grid__banner {
+      width: 16.66%;
+    }
+  }
+
+  .organism__grid {
+    padding: 0 16px 16px 16px;
+  }
 }
 
 @media screen and (min-width: $breakpoint-min-desktop) {
-  .organism__product-grid__product {
+  .organism__grid__offer-card {
     padding: 12px;
-    width: 210px;
+    width: 20%;
     display: inline-block;
   }
 }

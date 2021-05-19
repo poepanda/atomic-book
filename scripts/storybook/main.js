@@ -7,6 +7,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-storysource',
     '@storybook/preset-scss',
+    '../../addons/atomic-addon/src/preset.js',
     {
       name: '@storybook/addon-postcss',
       options: {

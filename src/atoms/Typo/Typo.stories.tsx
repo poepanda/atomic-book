@@ -16,10 +16,10 @@ SectionTitle.args = {
   type: TypoTypes.StandardTitle,
 };
 
-export const MerchantName = Template.bind({});
-MerchantName.args = {
+export const CardTitle = Template.bind({});
+CardTitle.args = {
   children: 'Merchant Name',
-  type: TypoTypes.MerchantName,
+  type: TypoTypes.CardTitle,
 };
 
 export const FinalPrice = Template.bind({});

@@ -24,6 +24,7 @@
   font-weight: 700;
   color: $sbds-font-color-primary;
   line-height: $fontsize-20px;
+  display: inline-block;
 }
 
 .atom__typo--type-usual-price {
@@ -32,6 +33,8 @@
   color: $sbds-font-color-disabled;
   line-height: $fontsize-16px;
   text-decoration: line-through;
+  display: inline-block;
+  margin-left: 4px;
 }
 
 .atom__typo--type-long-title-secondary {

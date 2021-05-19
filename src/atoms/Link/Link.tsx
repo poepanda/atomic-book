@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { ReactChild } from 'react'
 import './Link.scss'
-
 export interface ILinkProps {
   href: string,
   children: ReactChild

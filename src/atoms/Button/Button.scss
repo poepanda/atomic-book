@@ -1,8 +1,8 @@
 @import 'src/base/styles/variables.scss';
 
-.button {
-  background-color: $sbds-background-color-dark;
-  color: #ffffff;
+.atom__button {
+  background-color: $sbds-interaction-color-dark;
+  color: $sbds-font-color-inverse;
   font-size: 16px;
   border-radius: 18px;
   padding: 10px 20px;
@@ -11,6 +11,6 @@
   text-transform: uppercase;
 }
 
-.button:hover {
+.atom__button:hover {
   background-color: #0069d9;
 }

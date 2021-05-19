@@ -1,29 +1,59 @@
 import PropTypes from 'prop-types'
-import React, { ReactChild } from 'react'
-import kebabCase from 'lodash/kebabCase'
+import React, { ReactChild, ReactHTMLElement } from 'react'
+import map from 'lodash/map'
+import get from 'lodash/get'
 import classnames from 'classnames'
 import './Image.scss'
 
 export enum ImageTypes {
   ThumbnailLandscape = 'Thumbnail Landscape',
-  BannerPortrait = 'Banner Portrait',
 }
 
-export interface IImageProps {
-  type?: ImageTypes,
-  className?: String,
-  alt?: string,
+interface Sources {
   src?: string,
+  width: number
 }
 
-function Image({ type, alt, src, className = '' }: IImageProps) {
-  const divClasses = classnames(
+interface ImageDetail {
+  alt?: string
+  sources?: Sources[]
+  url?: string
+  src: string
+}
+export interface IImageProps {
+  className?: String
+  details: ImageDetail
+}
+
+function Image({ details, className = '' }: IImageProps) {
+  const { src, url, sources, alt, } = details
+  const imageClasses = classnames(
     'atom__image',
-    `atom__image--type-${kebabCase(type)}`,
     className,
   )
-  // return <div className={divClasses}></div>
-  return <img className={divClasses} alt={alt} src={src || 'https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder-1024x512.png'} />
+  const sourceTags : any[] = [];
+
+  map(sources, (source) => {
+    sourceTags.push(<source media={`(max-width: ${source.width}px)`} srcSet={source.src} />)
+  })
+
+  const _image = () => (
+    <picture className={imageClasses}>
+      {sourceTags}
+      <img className={imageClasses} src={src} alt={alt} />
+    </picture>
+  )
+
+  return url ? (
+    <a className="atom__image__container" href={url}>
+      {_image()}
+    </a>
+  ) : (
+    <div className="atom__image__container">
+      {_image()}
+    </div>
+    
+  )
 }
 
 Image.propTypes = {

@@ -1,26 +1,32 @@
 @import 'src/base/styles/variables.scss';
 
-.atom__image--type-thumbnail-landscape {
-  width: 100%;
-  max-height: 90px;
+.atom__image {
   border-radius: 8px;
-  background-color: $sbds-global-color-blue-10;
   overflow: hidden;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  min-height: 100%;
+  
+  img {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 8px;
+  }
 }
 
-.atom__image--type-thumbnail-portrait {
-  width: 100%;
-  max-height: 273px;
-  border-radius: 8px;
-  background-color: $sbds-global-color-blue-10;
-  overflow: hidden;
+.atom__image__container {
+  display: flex;
+}
+
+.atom__image--type-thumbnail-landscape {
+  margin: auto;
+  display: block;
 }
 
 @media screen and (min-width: $breakpoint-min-tablet) {
-
   .atom__image--type-thumbnail-landscape {
-    width: 100%;
-    max-height: 140px;
+    max-width: 100%;
   }
 }
 

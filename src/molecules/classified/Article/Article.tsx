@@ -34,7 +34,7 @@ function Article({ article }: IArticleProps) {
           {topTag.label}
         </Tag>
       </div>
-      <Image type={ImageTypes.ThumbnailLandscape} />
+      <Image details={{src: 'abc'}} />
       <Typo className={'molecule__article__title'} type={TypoTypes.LongTitlePrimary}>{title}</Typo>
       <Typo className={'molecule__article__description'} type={TypoTypes.LongTitleSecondary}>{description}</Typo>
       {map(tags, tag => (

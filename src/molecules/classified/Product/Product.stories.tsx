@@ -5,7 +5,7 @@ import Product, { IProductProps } from './Product'
 
 import { COMMON_PRODUCT } from "./mock-data";
 
-export default getConfig({ title: 'molecules/Product', component: Product })
+export default getConfig({ title: 'molecules/classified/Product', component: Product })
 
 const Template: Story<IProductProps> = (args: IProductProps) => (
   <div className="card-container">

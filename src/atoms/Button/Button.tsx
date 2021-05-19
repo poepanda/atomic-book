@@ -9,7 +9,7 @@ interface IProps {
 
 function Button({ onClick, children }: IProps) {
   return (
-    <button className="button" onClick={onClick}>
+    <button className="atom__button" onClick={onClick}>
       {children}
     </button>
   )

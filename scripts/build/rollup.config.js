@@ -62,6 +62,7 @@ function getOutputs({ file }) {
         : path.join(distDirectory, fileDistDirectory, fileBaseName),
       format,
       exports: 'named',
+      sourcemap: false,
     }
     return output
   })

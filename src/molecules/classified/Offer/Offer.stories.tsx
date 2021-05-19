@@ -5,7 +5,7 @@ import Offer, { IOfferProps } from './Offer'
 
 import { COMMON_OFFER, UPSIZED_OFFER } from "./mock-data";
 
-export default getConfig({ title: 'molecules/Offer', component: Offer })
+export default getConfig({ title: 'molecules/classified/Offer', component: Offer })
 
 const Template: Story<IOfferProps> = (args: IOfferProps) => (
   <div className="card-container">

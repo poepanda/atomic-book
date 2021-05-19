@@ -36,7 +36,7 @@ function Offer({ offer }: IOfferProps) {
           {topTag.label}
         </Tag>
       </div>
-      <Image type={ImageTypes.ThumbnailLandscape} />
+      <Image  details={{src: 'abc'}} />
       <MerchantLogo className="molecule__offer__merchant" {...merchant} />
       <Typo className={'molecule__offer__cashback'} type={TypoTypes.Cashback}>{cashback}</Typo>
       { usualCashback ? <Typo type={TypoTypes.UsualCashback}>{usualCashback}</Typo> : null }

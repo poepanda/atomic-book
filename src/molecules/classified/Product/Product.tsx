@@ -32,7 +32,7 @@ function Product({ product }: IProductProps) {
           Top Tag
         </Tag>
       </div>
-      <Image type={ImageTypes.ThumbnailLandscape} />
+      <Image  details={{src: 'abc'}} />
       <Typo className={'molecule__product__merchant-name'} type={TypoTypes.MerchantName}>{merchant.name}</Typo>
       <Typo className={'molecule__product__price'} type={TypoTypes.FinalPrice}>{price}</Typo>
       {usualPrice ? <Typo type={TypoTypes.UsualPrice}>{usualPrice}</Typo> : null }

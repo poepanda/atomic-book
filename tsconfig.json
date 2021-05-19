@@ -16,7 +16,8 @@
       "@scripts/*": ["./scripts/*"],
       "@base/*": ["./src/base/*"],
       "@atoms/*": ["./src/atoms/*"],
-      "@molecules/*": ["./src/molecules/*"]
+      "@molecules/*": ["./src/molecules/*"],
+      "@utils/*": ["./src/utils/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

@@ -5,7 +5,7 @@ import Article, { IArticleProps } from './Article'
 
 import { COMMON_ARTICLE } from "./mock-data";
 
-export default getConfig({ title: 'molecules/Article', component: Article })
+export default getConfig({ title: 'molecules/classified/Article', component: Article })
 
 const Template: Story<IArticleProps> = (args: IArticleProps) => (
   <div className="card-container">

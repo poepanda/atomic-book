@@ -3,6 +3,7 @@
 .atom__tag {
   display: flex;
   align-items: center;
+  margin-right: 4px;
 }
 
 .atom__tag--type-common {
@@ -49,4 +50,8 @@
 }
 
 @media screen and (min-width: $breakpoint-min-desktop) {
+  .atom__tag {
+    margin-right: 8px;
+  }
+
 }

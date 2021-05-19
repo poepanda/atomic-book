@@ -1,0 +1,25 @@
+@import 'src/base/styles/variables.scss';
+
+.molecule__offer-card {
+  width: 100%;
+}
+
+.molecule__offer-card__merchant {
+  margin-top: 8px;
+  position: relative;
+}
+
+.molecule__offer-card__thumbnail {
+  position: relative;
+}
+
+.molecule__offer__content-info {
+  margin-top: 8px;
+}
+
+.molecule__offer-card__callout {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  z-index: 5;
+}

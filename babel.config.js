@@ -9,6 +9,7 @@ module.exports = {
           "@base": "./src/base",
           "@atoms": "./src/atoms",
           "@molecules": "./src/molecules",
+          "@utils": "./src/utils",
         }
       }
     ],

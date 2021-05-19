@@ -2,6 +2,9 @@ import PropTypes from 'prop-types'
 import React, { ReactChild } from 'react'
 import kebabCase from 'lodash/kebabCase'
 import classnames from 'classnames'
+
+import transformReactCustomStyles from '@utils/transformReactCustomStyles'
+
 import './Tag.scss'
 
 export enum TagTypes {
@@ -15,9 +18,10 @@ export interface ITag {
   type: TagTypes,
 }
 export interface ITagProps {
-  type?: TagTypes,
-  className?: String,
-  children: ReactChild,
+  type?: TagTypes
+  className?: String
+  customStyles: object
+  children: ReactChild
 }
 
 const UpsizeIcon = () => (
@@ -26,14 +30,14 @@ const UpsizeIcon = () => (
   </svg>
 )
 
-function Tag({ type, children, className = '' }: ITagProps) {
+function Tag({ type, children, customStyles, className = '' }: ITagProps) {
   const divClasses = classnames(
     'atom__tag',
     `atom__tag--type-${kebabCase(type)}`,
     className,
   )
   return (
-    <div className={divClasses}>
+    <div className={divClasses} style={transformReactCustomStyles(customStyles)}>
       { type === TagTypes.UpsizedCalloutTopLeft ? <UpsizeIcon /> : null }
       {children}
     </div>

@@ -7,7 +7,7 @@ import './MerchantLogo.scss'
 export interface IMerchantLogoProps {
   src: string
   alt: string
-  url: string
+  url?: string
   className?: string
 }
 
