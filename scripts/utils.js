@@ -1,5 +1,5 @@
-import fs from 'fs'
-import path from 'path'
+const fs = require('fs')
+const path = require('path')
 
 // type - file, folder, both
 const getFilesFolders = (dir, isRecursive = true, type = 'file') =>
@@ -22,6 +22,4 @@ const getFilesFolders = (dir, isRecursive = true, type = 'file') =>
     return [...files, ...fileFolder, ...fileFolders]
   }, [])
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname)
-
-export { getFilesFolders, __dirname }
+module.exports = { getFilesFolders }

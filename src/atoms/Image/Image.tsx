@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { ReactChild, ReactHTMLElement } from 'react'
-import map from 'lodash/map'
-import get from 'lodash/get'
+import { map, get } from 'lodash'
 import classnames from 'classnames'
 import './Image.scss'
 

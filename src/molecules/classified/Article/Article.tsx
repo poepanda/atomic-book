@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import map from 'lodash/map';
+import { map } from 'lodash';
 
 import Image, { ImageTypes } from '@atoms/Image/Image'
 import Tag, { TagTypes } from '@atoms/Tag/Tag'

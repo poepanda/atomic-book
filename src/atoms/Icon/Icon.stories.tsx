@@ -1,6 +1,6 @@
 import {Story} from "@storybook/react";
 import React from 'react'
-import map from 'lodash/map'
+import { map } from 'lodash'
 
 import { getConfig } from '@scripts/storybook/storyConfig'
 import Icon, { IIconProps, ICONS } from './Icon'

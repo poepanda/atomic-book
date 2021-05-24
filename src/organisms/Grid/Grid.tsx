@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import classnames from 'classnames'
-import map from 'lodash/map'
-import kebabCase from 'lodash/kebabCase'
+import { map, kebabCase } from 'lodash'
 
 import OfferCard from '@molecules/OfferCard/OfferCard'
 import Image from '@atoms/Image/Image'
