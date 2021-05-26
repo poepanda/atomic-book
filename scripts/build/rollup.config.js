@@ -5,7 +5,7 @@ const typescript = require('@rollup/plugin-typescript');
 const autoExternal = require('rollup-plugin-auto-external');
 const babel = require('rollup-plugin-babel');
 const postcss = require('rollup-plugin-postcss');
-const { terser } = require('rollup-plugin-terser')
+const { terser } = require('rollup-plugin-terser');
 
 const { getFilesFolders } = require('../utils')
 
@@ -18,11 +18,10 @@ function getOutputs({ file }) {
   const fileDirectoryParent = path.dirname(path.dirname(file))
   const fileBaseName = path.basename(file)
   const shouldUseIndex = () => {
-    return {
-      file: !fs.existsSync(path.join(fileDirectory, 'index.js')) &&
-      fileBaseName.replace(path.extname(fileBaseName), '') === fileDirectory.replace(fileDirectoryParent, '').slice(1),
-      source: false,
-    }
+    return (
+      !fs.existsSync(path.join(fileDirectory, 'index.js')) &&
+      fileBaseName.replace(path.extname(fileBaseName), '') === fileDirectory.replace(fileDirectoryParent, '').slice(1)
+    )
   }
 
   return buildFormats.map((format) => {
@@ -30,7 +29,7 @@ function getOutputs({ file }) {
     const output = {
       file: shouldUseIndex()
         ? path.join(distDirectory, fileDistDirectory, 'index.js')
-        : path.join(distDirectory, fileDistDirectory, fileBaseName),
+        : path.join(distDirectory, fileDistDirectory, fileBaseName.replace(/\.ts/g, '.js')),
       format,
       exports: 'named',
       sourcemap: false,
@@ -63,6 +62,7 @@ const getRollupConfig = (file) => {
         autoExternal(),
         babel({
           exclude: '/node_modules/**',
+          include: ['/node_modules/swiper/**']
         }),
         commonjs(),
   
@@ -73,7 +73,7 @@ const getRollupConfig = (file) => {
         }),
         terser(),
       ],
-      external: ['prop-types'],
+      external: ['prop-types', 'react', 'react-dom'],
       output: getOutputs({ file }),
     }
   }

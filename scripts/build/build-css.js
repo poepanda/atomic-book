@@ -37,4 +37,4 @@ console.log('Duration: ', `${cleanedCss.stats.timeSpent}ms`.green)
 if (!fs.existsSync(assetsPath)){
   fs.mkdirSync(assetsPath);
 }
-fs.writeFileSync(path.join(assetsPath, `styles.${(new Date()).getTime()}.css`), cleanedCss.styles)
+fs.writeFileSync(path.join(assetsPath, `styles.css`), cleanedCss.styles)

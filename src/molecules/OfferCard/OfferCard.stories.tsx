@@ -7,7 +7,7 @@ import {
   FULL_CONFIG_OFFER_CARD_COMMON,
   MERCHANT_CARD_COMMON,
   MERCHANT_CARD_UPSIZED
-} from './OfferCard.mocks'
+} from './mock-data'
 
 export default getConfig({ title: 'molecules/OfferCard', component: OfferCard })
 

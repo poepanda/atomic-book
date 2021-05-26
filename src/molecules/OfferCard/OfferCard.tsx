@@ -18,8 +18,6 @@ export interface IOfferCardProps {
 }
 
 function OfferCard({ details }: IOfferCardProps) {
-  console.log('offer detail -> ', details)
-
   const { imageInfo, merchant, contentInfo, callout } = details;
 
   const _callout = () => {
@@ -115,7 +113,6 @@ function OfferCard({ details }: IOfferCardProps) {
             {
               map(info.labels, (tag) => {
                 const { text, ...customStyles } = tag
-                console.log('custom styles -> ', customStyles)
                 return (
                   <Tag type={TagTypes.Common} customStyles={customStyles}>
                     {text}

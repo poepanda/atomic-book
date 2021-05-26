@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { ReactChild } from 'react'
-import get from 'lodash/get';
-import kebabCase from 'lodash/kebabCase'
 import classnames from 'classnames'
+import { kebabCase, get } from 'lodash'
 
 import transformReactCustomStyles from '@utils/transformReactCustomStyles'
 

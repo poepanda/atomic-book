@@ -2,7 +2,7 @@ import {Story} from "@storybook/react";
 import React from 'react'
 import { getConfig } from '@scripts/storybook/storyConfig'
 import Image, { IImageProps, ImageTypes } from './Image'
-import { BANNER_SAMPLE_1 } from "./Image.mocks";
+import { BANNER_SAMPLE_1 } from "./mock-data";
 
 export default getConfig({ title: 'atoms/Image', component: Image })
 

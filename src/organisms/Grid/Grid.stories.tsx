@@ -4,8 +4,8 @@ import { getConfig } from '@scripts/storybook/storyConfig'
 import Grid, { GridItemTypes, IGridProps } from './Grid'
 import times from 'lodash/times'
 
-import { FULL_CONFIG_OFFER_CARD_COMMON, MERCHANT_CARD_COMMON, MERCHANT_CARD_UPSIZED } from '@molecules/OfferCard/OfferCard.mocks'
-import { BANNER_SAMPLE_1, BAD_BANNER_SAMPLE_1, BANNER_SQUARE_SAMPLE_1 } from "@atoms/Image/Image.mocks";
+import { FULL_CONFIG_OFFER_CARD_COMMON, MERCHANT_CARD_COMMON, MERCHANT_CARD_UPSIZED } from '@molecules/OfferCard/mock-data'
+import { BANNER_SAMPLE_1, BAD_BANNER_SAMPLE_1, BANNER_SQUARE_SAMPLE_1 } from "@atoms/Image/mock-data";
 
 export default getConfig({ title: 'organisms/Grid', component: Grid })
 
