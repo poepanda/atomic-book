@@ -1,5 +1,5 @@
 {
-  "name": "atomic-book",
+  "name": "@shopback/atomic-book",
   "version": "0.0.1",
   "description": "A book of atomic components",
   "keywords": [
