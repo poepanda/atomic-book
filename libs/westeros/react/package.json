@@ -1,0 +1,7 @@
+{
+  "name": "react",
+  "main": "./react.js",
+  "module": "./react.js",
+  "version": "0.0.1",
+  "sideEffects": false
+}

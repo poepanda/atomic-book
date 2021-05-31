@@ -1,0 +1,7 @@
+{
+  "name": "react-dom",
+  "main": "./react-dom.js",
+  "module": "./react-dom.js",
+  "version": "0.0.1",
+  "sideEffects": false
+}

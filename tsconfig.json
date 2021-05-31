@@ -17,7 +17,8 @@
       "@base/*": ["./src/base/*"],
       "@atoms/*": ["./src/atoms/*"],
       "@molecules/*": ["./src/molecules/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@libs/*": ["./libs/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
@@ -31,6 +32,6 @@
     "isolatedModules": true,
     "jsx": "react",
   },
-  "include": ["src/**/*", "global.d.ts"],
+  "include": ["src/**/*", "libs/**/*", "global.d.ts"],
   "exclude": ["node_modules", "**/*.test.tsx", "scripts/**/*"]
 }

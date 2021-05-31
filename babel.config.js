@@ -10,6 +10,7 @@ module.exports = {
           "@atoms": "./src/atoms",
           "@molecules": "./src/molecules",
           "@utils": "./src/utils",
+          "@libs": "./libs",
         }
       }
     ],
